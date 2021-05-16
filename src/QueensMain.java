@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class QueensMain {
-    // har kørt det hele i main for Queens. Har lavet en scanner så man selv kan vælge felt.
-    //håber i synes det giver mening.. og at en af jer vil lære mig at spille skak en dag :)
+    //kørt det hele i main for Queens. scanner så man selv kan vælge felt.
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -26,9 +26,7 @@ public class QueensMain {
         }
     }
 
-    // har lavet denne metode for at se om vi kan få lov til at placere vores dronning i spillet.
-    //er ikke 100% sikker på at jeg forstod opgaven, især fordi jeg aldrig spille skak. Så i må gerne lige
-    //tjekke om i synes det giver mening :)
+    // metode for at se om vi kan få lov til at placere vores dronning i spillet.
     public static boolean isSafeToPlaceQueen(int[][] chess, int row, int col) {
         //checker række på venstre side
         for (int i = row - 1, j = col; i >= 0; i--) {

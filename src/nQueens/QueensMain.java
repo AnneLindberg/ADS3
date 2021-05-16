@@ -1,3 +1,5 @@
+package nQueens;
+
 import java.util.Scanner;
 
 public class QueensMain {
